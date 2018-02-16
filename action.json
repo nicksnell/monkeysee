@@ -1,0 +1,26 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "monkeyAppResponder"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "talk to Monkey"
+          ]
+        }
+      }
+    }
+  ],
+  "conversations": {
+    "monkeyAppResponder": {
+      "name": "monkeyAppResponder",
+      "url": "https://us-central1-actiontesting-bd20d.cloudfunctions.net/monkeyAppResponder"
+    }
+  },
+  "locale": "en"
+}
